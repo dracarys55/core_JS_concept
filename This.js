@@ -50,6 +50,7 @@ const obj = {
 obj.hello(); // 1
 
 //為甚麼會需要單例模式
+//https://b-l-u-e-b-e-r-r-y.github.io/post/JSDesignPattern01/
 
 /* 
 this
