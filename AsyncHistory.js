@@ -4,16 +4,6 @@ AJAX = Asynchronous JavaScript And XML.
 一開始請求的資料格式是使用 XML，後來才改變成我們熟知的JSON格式
 參考好文 :https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/ajax_fetch.html
 */
-<<<<<<< HEAD
-/* 可以用joke API 當範例 */
-const result = fetch('https://jsonplaceholder.typicode.com/todos?userId=1')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-setTimeout(() => {
-  // response = result.json();
-  console.log(result);
-}, 3000);
-=======
 //
 //
 //
@@ -71,7 +61,6 @@ let getJokeData_2 = () => {
 //
 //
 //
->>>>>>> 84467d752c5ecebe044c994bce504441eae221d9
 /* 
 ES6 出現了救世主 Fetch API + Promise
 
@@ -111,11 +100,11 @@ function getData(json) {
     }
   });
 }
-<<<<<<< HEAD
+
 const req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get', 'https://jsonplaceholder.typicode.com/todos?userId=1', true);
-req.send(); */
+req.send();
 
 // let example = new Promise((resolve, reject) => {
 //   resolve('resolve');
@@ -143,7 +132,6 @@ function get_joke_of_the_day() {
 get_joke_of_the_day();
 
 console.log(window.fetch);
-=======
 
 /* 但要注意的是fetch在只要在伺服器有回應的情況下，都會回傳已實現的Promise物件狀態(只要不是網路連線問題，或是伺服器失連等等)，
 在這其中也會包含狀態碼為錯誤碼(404, 500...)的情況，所以在使用時還需要加一下檢查: */
@@ -194,4 +182,3 @@ async function getJokeData() {
   await delay(2000); // 延遲二秒
   console.log(3); // 顯示 3
 })();
->>>>>>> 84467d752c5ecebe044c994bce504441eae221d9
