@@ -28,6 +28,22 @@ const characters = [
     gender: 'male',
   },
 ];
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //***MAP***
 //1. Get array of all names
@@ -47,6 +63,22 @@ const firstNames = characters.map((character) => {
   return character.name.split(' ')[0];
 });
 /* console.log(firstNames) */
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //***REDUCE***
 //1. Get total mass of all characters
@@ -88,6 +120,22 @@ const charactersByNames = characters.reduce((acc, cur) => {
   return acc;
 }, {});
 /*   console.log(charactersByNames) */
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //***FILTER***
 //1. Get characters with mass greater than 100
@@ -112,6 +160,23 @@ const femaleCharacter = characters.filter(
   (character) => character.gender === 'female'
 );
 /* console.log(femaleCharacter); */
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* https://medium.com/@leokao0726/%E6%B7%BA%E8%AB%87-js-sort-%E5%88%B0%E8%83%8C%E5%BE%8C%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95-1035f5b8cde8
   sort 背後的排序方法
@@ -140,6 +205,22 @@ const byGender = characters.sort((a, b) => {
   return 1;
 });
 /* console.log(byGender); */
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //***EVERY***
 //1. Does every character have blue eyes?
@@ -150,6 +231,22 @@ const allBlueEyes = characters.every(
 //3. Is every character shorter than 200?
 //4. Is every character male?
 /* done eazy */
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 //***SOME***
 //1. Is there at least one male character?
