@@ -266,4 +266,8 @@ characters.forEach((character) => {
 
 console.log(characters);
 console.log(newArr);
-/* forEach 會改變原陣列 */
+/* 
+forEach 會改變原陣列
+
+迴圈用法 for ,forEach, while 差別
+*/
